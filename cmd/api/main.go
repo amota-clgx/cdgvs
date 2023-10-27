@@ -50,10 +50,11 @@ func main() {
 	mux.HandleFunc("/", home)
 	mux.HandleFunc("/v1/healthcheck", app.healthcheckHandler)
 	mux.HandleFunc("/partner/v2/origins/:origin_id", getOriginsByOriginId)
+	//mux.HandleFunc("/partner/v2/transactions", getAllTransactions)
 
 	srv := &http.Server{
 		Addr:         fmt.Sprintf(":%d", cfg.port),
-		Handler:      mux,
+		Handler:      app.routes(),
 		IdleTimeout:  time.Minute,
 		ReadTimeout:  5 * time.Second,
 		WriteTimeout: 10 * time.Second,
