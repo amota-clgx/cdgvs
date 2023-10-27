@@ -48,8 +48,8 @@ func main() {
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", home)
-	mux.HandleFunc("/v1/healthcheck", app.healthcheckHandler)
-	mux.HandleFunc("/partner/v2/origins/:origin_id", getOriginsByOriginId)
+	//mux.HandleFunc("/v1/healthcheck", app.healthcheckHandler)
+	//mux.HandleFunc("/partner/v2/origins/:origin_id", getOriginsByOriginId)
 	//mux.HandleFunc("/partner/v2/transactions", getAllTransactions)
 
 	srv := &http.Server{
