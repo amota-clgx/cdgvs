@@ -1,0 +1,253 @@
+{
+  "id": "5ab78698-e341-45b3-b79c-4bc30de262ab",
+  "environment": "sandbox",
+  "entityRef": {
+    "entityId": "urn:elli:encompass:BE11221402:loan:1c5800f9-c4a5-4625-84d7-29af5e674a14",
+    "entityType": "urn:elli:encompass:loan"
+  },
+  "product": {
+    "id": "0e3918af-8593-4c57-ba2a-356e3d22453b",
+    "partnerId": "11158354",
+    "name": "SampleCCCService"
+  },
+  "loanFormat": "application/vnd.plm-2.0.0+json",
+  "loan": {
+    "contacts": [
+      {
+        "name": "Processor User",
+        "email": "someEmail@email.com",
+        "contactType": "LOAN_PROCESSOR",
+        "contactName": "someContactName",
+        "insuranceDeterminationDate" : null,
+        "cell": "123-456-7891",
+        "phone": "123-456-7891",
+        "phone2": "999-456-7891",
+        "fax": "123-456-7891",
+        "fax2": "999-456-7891",
+        "nmlsLicense": "license",
+        "address": "123 wallaby way",
+        "city": "irvine",
+        "state": "CA",
+        "postalCode": "12345",
+        "categoryName": "catName"
+      },
+      {
+        "name": "Officer User",
+        "email": "changeme@email.com",
+        "contactType": "LOAN_OFFICER",
+        "contactName": "someContactName2",
+        "insuranceDeterminationDate" : null
+      },
+      {
+        "name": "Demo Account - CSO #6",
+        "contactType": "LENDER_INVESTOR",
+        "contactName": "someContactName3",
+        "insuranceDeterminationDate" : null
+      },
+      {
+        "name": "CoreLogic",
+        "contactType": "APPRAISAL_COMPANY",
+        "contactName": "someContactName4",
+        "insuranceDeterminationDate" : null,
+        "categoryName": "someCategoryName"
+      }
+    ],
+    "property": {
+      "city": "Someplace",
+      "state": "MA",
+      "county": "Bristol",
+      "postalCode": "02723",
+      "streetAddress": "4321 Cul de Sac ST",
+      "loanPurposeType": "Cash-Out Refinance",
+      "floodCertificationIdentifier" : null,
+      "propertyRightsType": "Purchase",
+      "assessorsParcelIdentifier": "123-456-7891-000",
+      "lotIdentifier": "1A",
+      "blockIdentifier": "2B",
+      "addressUnitIdentifier": "Ste 200"
+    },
+    "loanNumber": "LNM170300002",
+    "applications": [
+      {
+        "borrower": {
+          "id": "123abc-123acb-asdf223",
+          "lastName": "America",
+          "firstName": "Andy",
+          "employment": [
+            {
+              "phoneNumber": "123-123-1234",
+              "currentEmploymentIndicator": true
+            }
+          ],
+          "residences": [
+            {
+              "addressCity": "Someplace",
+              "addressState": "MA",
+              "residencyType": "Current",
+              "addressPostalCode": "02723",
+              "addressStreetLine1": "4321 Cul de Sac ST"
+            }
+          ],
+          "fullNameWithSuffix": "Andy America",
+          "emailAddressText" : "andyAmerica@mailinator.com",
+          "workEmailAddress" : "andyAmerica@mailinator.com",
+          "mobilePhone" : "555-555-5555",
+          "homePhoneNumber" : "555-555-5555",
+          "suffixToName":  "I",
+          "middleName":  "Jay"
+        },
+        "coborrower": {
+          "id": "123abc-123acb-asdf223",
+          "lastName": "America",
+          "firstName": "Amy",
+          "employment": [
+            {
+              "phoneNumber": "111-111-1111",
+              "currentEmploymentIndicator": true
+            }
+          ],
+          "residences": [
+            {
+              "addressCity": "Someplace",
+              "addressState": "MA",
+              "residencyType": "Current",
+              "addressPostalCode": "02723",
+              "addressStreetLine1": "4321 Cul de Sac ST"
+            }
+          ],
+          "fullNameWithSuffix": "Amy America",
+          "emailAddressText" : "andyAmerica@mailinator.com",
+          "workEmailAddress" : "andyAmerica@mailinator.com",
+          "mobilePhone" : "555-555-5555",
+          "homePhoneNumber" : "555-555-5555",
+          "suffixToName": "II",
+          "middleName":  "Jane"
+        },
+        "id": "123098AODSFIU",
+        "propertyUsageType": "VACANT"
+      }
+    ],
+    "mortgageType": "Conventional",
+    "lenderCaseIdentifier": "LID170300002",
+    "closingDocument": {
+      "specialFloodHazardAreaIndictor": "indicator",
+      "mfgHomeMakeIdentifier": "identifier",
+      "mfgHomeModelIdentifier": "identifier",
+      "mfgHomeSerialNumberIdentifier": "identifier",
+      "mfgHomeNewOrUsed": "identifier",
+      "mfgHomeManufactureYear": 50,
+      "mfgHomeWidthFeetCount": 123,
+      "mfgHomeLengthFeetCount": 456
+    },
+    "disclosureNotices": {
+      "locatedInNfipIndicator": "yes",
+      "nfipParticipationStatus": "yes"
+    },
+    "borrowerRequestedLoanAmount": 214250.0,
+    "purchasePriceAmount" : 499999.99,
+    "propertyAppraisedValueAmount" : 999999.99,
+    "uldd": {
+      "propertyValuationEffectiveDate": "2021-06-17T22:25:34.466Z"
+    },
+    "agencyCaseIdentifier": "12345678A",
+    "regulationZ": {
+      "initialTilDisclosureProvidedDate":"2021-06-17T22:25:33.465Z",
+      "borrowerIntendToContinueDate": "2021-06-17T22:25:33.465Z"
+    },
+    "propertyEstimatedValueAmount": 999999.99,
+    "closingCost": {
+      "closingDisclosure5": {
+        "mortgageBrokerEmail": "someEmail@test.com",
+        "mortgageBrokerPhone": "123-456-7891"
+      },
+      "titleCompanyName": "someTitleName",
+      "escrowCompanyName": "someCompanyName"
+    },
+    "loanProductData": {
+      "borrowerEstimatedClosingDate": "2022-09-17T22:25:33.465Z",
+      "loanScheduledClosingDate": "2022-09-17T22:25:33.465Z",
+      "gsePropertyType": "Detached"
+    },
+    "interviewerName": "someInterviewerName",
+    "additionalRequests": {
+      "appraisalVacant": true
+    },
+    "interviewerEmail": "someEmail@test.com",
+    "loanAmortizationTermMonths": "36 Months",
+    "commitmentTerms": {
+      "subdivisionDescription": "SubdivisionA"
+    },
+    "tsum": {
+      "propertyType": "Single Family"
+    },
+    "nmlsLoanOriginatorId": "someLoanOriginatorId",
+    "fees": [
+      {
+        "feeType": "someFeeType",
+        "paidToName": "somePaidToName"
+      }
+    ],
+    "milestones": [ {
+      "loanAssociate": {
+        "role": {
+          "entityName": "name"
+        },
+        "user": {
+          "entityName": "name"
+        }
+      }
+    }
+    ],
+    "milestoneFreeRoles": [ {
+      "loanAssociate": {
+        "role": {
+          "entityName": "name"
+        },
+        "user": {
+          "entityName": "name"
+        }
+      }
+    }
+    ],
+    "fhaVALoan": {
+      "closingDate": "2022-09-17T22:25:33.465Z"
+    },
+    "loanSubmission": {
+      "lockExpiresDate": "2022-09-17T22:25:33.465Z"
+    },
+    "channel": "channel",
+    "originationDate": "2022-09-17T22:25:33.465Z",
+    "ltv": "1",
+    "combinedLtv": "2",
+    "id": "someId"
+
+  },
+  "interfaceUrl": "https://elliemae-portal-uat.corelogic.com",
+  "credentials": {
+    "clientId": "1043592",
+    "clientName": "document-service-unknown",
+    "lenderId": "GG000146",
+    "userName": "uname1",
+    "userPwd": "pwsd1",
+    "lenderIdList":  "12346, 78945",
+    "lsfmUser": "login",
+    "lsfmPwd": "password",
+    "lenderLogin": "someLenderLogin",
+    "lenderPwd": "someLenderPassword",
+    "extendedOrderForm": "Enable_True",
+    "defaultProductCode": "productCode",
+    "allowedProductCodes": "allowedProductCodes",
+    "appInstance": "appInstance",
+    "appInstanceLogin": "appInstanceLogin",
+    "appInstancePwd": "appInstancePwd"
+  },
+  "originatingParty": {
+    "pointOfContact": {
+      "name": "Admin User",
+      "email": "someUser@email.com"
+    }
+  },
+  "identity": {
+    "hash": "someHash"
+  }
+}

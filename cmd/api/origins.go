@@ -1,9 +1,10 @@
 package main
 
 import (
-	"fmt"
+	"encoding/json"
 	"github.com/julienschmidt/httprouter"
 	"net/http"
+	"os"
 	"strconv"
 )
 
@@ -16,5 +17,19 @@ func (app *application) getOriginsById(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Fprintf(w, "retrieving origination context for a specific user interaction with iframe")
+	fileContents, err := os.ReadFile("resources/originData.json")
+	if err != nil {
+		http.Error(w, "File reading error", http.StatusNotFound)
+		return
+	}
+
+	var jsonData map[string]interface{}
+	if err := json.Unmarshal(fileContents, &jsonData); err != nil {
+		http.Error(w, "Error unmarshalling JSON data", http.StatusInternalServerError)
+		return
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(jsonData)
+
 }
