@@ -46,12 +46,6 @@ func main() {
 		logger: logger,
 	}
 
-	mux := http.NewServeMux()
-	mux.HandleFunc("/", home)
-	//mux.HandleFunc("/v1/healthcheck", app.healthcheckHandler)
-	//mux.HandleFunc("/partner/v2/origins/:origin_id", getOriginsByOriginId)
-	//mux.HandleFunc("/partner/v2/transactions", getAllTransactions)
-
 	srv := &http.Server{
 		Addr:         fmt.Sprintf(":%d", cfg.port),
 		Handler:      app.routes(),
@@ -62,7 +56,6 @@ func main() {
 	}
 
 	logger.Info("starting server", "addr", srv.Addr, "env", cfg.env)
-
 	err := srv.ListenAndServe()
 	logger.Error(err.Error())
 	os.Exit(1)
